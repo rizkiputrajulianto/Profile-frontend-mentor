@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    body{
+      font-family: "Kumbh Sans", sans-serif;
+      overflow: hidden;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+  <div class="bg-[#19a2ae] text-5xl border border-black relative w-full h-screen">
+    <div class="absolute -top-[360px] -left-[400px] w-[630px] h-[750px] lg:-top-[450px] lg:-left-96 lg:w-[960px]">
+      <img src="../images/bg-pattern-top.svg" alt="" srcset="">
+    </div>
+    <div class="absolute -bottom-[360px] -right-[400px] w-[630px] h-[750px] lg:-bottom-[450px] lg:-right-72 lg:w-[960px]">
+      <img src="../images/bg-pattern-bottom.svg" alt="" srcset="">
+    </div>
+    <div id="card" class="absolute w-72 bg-white top-1/4 left-10 lg:left-[550px] text-sm rounded-md">
+      <div class="static">
+        <img class="rounded-md" src="../images/bg-pattern-card.svg" alt="" srcset="">
+        <div id="avatar" class="absolute left-[90px] top-16">
+          <img class="rounded-full border-white border-4" src="../images/image-victor.jpg" alt="" srcset="">
+        </div>
+        <div id="content" class="pt-20 flex flex-col justify-center font-bold lg:px-10">
+          <div id="title" class="text-center text-[18px]">
+            Victor Crest &nbsp; <span class="text-gray-400">26</span>
+          </div>
+          <div id="location" class="text-gray-400 text-center pt-3">
+            London
+          </div>
+          <div id="stats" class="flex justify-evenly text-center pt-10 pb-4">
+            <div id="followers" class="flex flex-col">
+              80K
+              <span class="text-gray-400 tracking-wider">Followers</span> 
+            </div>
+          <div id="likes" class="flex flex-col">
+            803K
+            <span class="text-gray-400 tracking-wider">Likes</span> 
+          </div>
+          <div id="photos" class="flex flex-col">
+            1.4K
+            <span class="text-gray-400 tracking-wider">Photos</span> 
+          </div>
+          </div>
+    
+        </div>
+      
+      </div>
+    </div>
+    <footer class="absolute bottom-0 lg:left-[550px]">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Rizki Putra Julianto</a>.
+      </div>
+    </footer>
+  </div>
+  
+ 
+</body>
+</html>
